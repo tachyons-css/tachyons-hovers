@@ -1,4 +1,4 @@
-# TACHYONS-TYPE-SCALE
+# TACHYONS-HOVERS
 
 http://tachyons.io
 
@@ -6,52 +6,67 @@ Work In Progress. Pull requests and open issues welcome.
 
 ## Install
 ```
-npm install --save-dev tachyons-type-scale
+npm install --save-dev tachyons-hovers
 ```
 or download the css on github and include in your project.
 
 ## The Code
 ```
 
-/* ==========================================================================
-   TYPE SCALE
-   ========================================================================== */
-.mega  { font-size: 4rem; }
-.f1    { font-size: 2rem; }
-.f2    { font-size: 1.5rem; }
-.f3    { font-size: 1.25rem; }
-.f4    { font-size: 1rem; }
-.f5,
-.small { font-size: .85rem; }
+/*
+  HOVER EFFECTS
+*/
 
+/* 
+  
+  Dim element on hover by adding the dim class.
+*/
 
-@include break(not-small){
- .mega-ns { font-size: 4rem; }
- .f1-ns {   font-size: 2rem; }
- .f2-ns {   font-size: 1.5rem; }
- .f3-ns {   font-size: 1.25em; }
- .f4-ns {   font-size: 1.25rem; }
- .f5-ns {   font-size: 1rem; }
- .f6-ns {   font-size: .85rem; }
+.dim {
+  opacity: 1;
+  -webkit-transition: opacity .15s ease-in;
+          transition: opacity .15s ease-in;
 }
 
-@include break(medium) {
- .mega-m { font-size: 4rem; }
- .f1-m {   font-size: 2rem; }
- .f2-m {   font-size: 1.5rem; }
- .f3-m {   font-size: 1.25rem; }
- .f4-m {   font-size: 1rem; }
- .f5-m {   font-size: .85rem; }
+.dim:hover,
+.dim:focus {
+  opacity: .5;
+  -webkit-transition: opacity .15s ease-in;
+          transition: opacity .15s ease-in;
 }
 
-@include break(large) {
- .mega-l { font-size: 4rem; }
- .f1-l   { font-size: 2rem; }
- .f2-l   { font-size: 1.5rem; }
- .f3-l   { font-size: 1.25rem; }
- .f4-l   { font-size: 1rem; }
- .f5-l   { font-size: .85rem; }
+.dim:active {
+  opacity: .8;
+  -webkit-transition: opacity .15s ease-out;
+          transition: opacity .15s ease-out;
 }
+
+/*
+  Hide child on hover:
+  Put the hide-child class on a parent element and any nested element with the
+  child class will be hidden and displayed on hover or focus.
+  <div class="hide-child">
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+  </div>
+*/
+
+.hide-child .child {
+  opacity: 0;
+  -webkit-transition: opacity .15s ease-in;
+          transition: opacity .15s ease-in;
+}
+
+.hide-child:hover  .child,
+.hide-child:focus  .child,
+.hide-child:active .child {
+  opacity: 1;
+  -webkit-transition: opacity .15s ease-in;
+          transition: opacity .15s ease-in;
+}
+
 ```
 
 ## Author
