@@ -1,6 +1,6 @@
 {
   "name": "tachyons-hovers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "style": "tachyons-hovers.css",
   "homepage": "http://github.com/mrmrs/tachyons-hovers",
   "description": "Performance based css module.",
