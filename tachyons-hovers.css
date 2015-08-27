@@ -10,24 +10,19 @@
   Dim element on hover by adding the dim class.
 
 */
-
-.dim {
-  opacity: 1;
-  -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
+.dim { 
+  opacity: 1; 
+  -webkit-transition: opacity .15s ease-in; 
+          transition: opacity .15s ease-in; 
 }
-
 .dim:hover,
-.dim:focus {
-  opacity: .5;
-  -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
+.dim:focus { 
+  opacity: .5; 
+  -webkit-transition: opacity .15s ease-in; 
+          transition: opacity .15s ease-in; 
 }
-
 .dim:active {
-  opacity: .8;
-  -webkit-transition: opacity .15s ease-out;
-          transition: opacity .15s ease-out;
+  opacity: .8; -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out; 
 }
 
 /*
@@ -50,7 +45,6 @@
   -webkit-transition: opacity .15s ease-in;
           transition: opacity .15s ease-in;
 }
-
 .hide-child:hover  .child,
 .hide-child:focus  .child,
 .hide-child:active .child {
@@ -58,3 +52,4 @@
   -webkit-transition: opacity .15s ease-in;
           transition: opacity .15s ease-in;
 }
+
