@@ -1,6 +1,6 @@
 {
   "name": "tachyons-hovers",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "style": "tachyons-hovers.css",
   "homepage": "http://github.com/mrmrs/tachyons-hovers",
   "description": "Performance based css module.",
@@ -50,7 +50,6 @@
     "postcss-css-variables": "^0.4.0",
     "postcss-custom-media": "^4.1.0",
     "postcss-import": "^6.2.0"
-
   },
   "scripts": {
     "start": "node build.js"
