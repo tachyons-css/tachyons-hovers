@@ -1,50 +1,55 @@
-# TACHYONS-HOVERS
+# tachyons-hovers
+1.1.0
 
-http://tachyons.io
-
-Work In Progress. Pull requests and open issues welcome.
+Performance based css module.
 
 ## Install
 ```
 npm install --save-dev tachyons-hovers
 ```
-or download the css on github and include in your project.
+
+or download the css on github and include in your project:
+
+```
+git clone git@github.com:mrmrs/tachyons-hovers
+```
 
 ## The Code
 ```
-
 /*
+
   HOVER EFFECTS
+
+
 */
 
 /* 
   
   Dim element on hover by adding the dim class.
+
 */
-
-.dim {
-  opacity: 1;
-  -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
+.dim { 
+  opacity: 1; 
+  -webkit-transition: opacity .15s ease-in; 
+          transition: opacity .15s ease-in; 
 }
-
 .dim:hover,
-.dim:focus {
-  opacity: .5;
-  -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
+.dim:focus { 
+  opacity: .5; 
+  -webkit-transition: opacity .15s ease-in; 
+          transition: opacity .15s ease-in; 
 }
-
 .dim:active {
-  opacity: .8;
-  -webkit-transition: opacity .15s ease-out;
-          transition: opacity .15s ease-out;
+  opacity: .8; -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out; 
 }
 
 /*
+
   Hide child on hover:
+
   Put the hide-child class on a parent element and any nested element with the
   child class will be hidden and displayed on hover or focus.
+
   <div class="hide-child">
     <div class="child"> Hidden until hover or focus </div>
     <div class="child"> Hidden until hover or focus </div>
@@ -58,7 +63,6 @@ or download the css on github and include in your project.
   -webkit-transition: opacity .15s ease-in;
           transition: opacity .15s ease-in;
 }
-
 .hide-child:hover  .child,
 .hide-child:focus  .child,
 .hide-child:active .child {
@@ -66,6 +70,7 @@ or download the css on github and include in your project.
   -webkit-transition: opacity .15s ease-in;
           transition: opacity .15s ease-in;
 }
+
 
 ```
 
