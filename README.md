@@ -1,48 +1,75 @@
-# tachyons-hovers
-1.1.0
+# tachyons-hovers 1.1.0
 
 Performance based css module.
 
-## Install
+#### Stats
+
+324 | 8 | 10
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev tachyons-hovers
 ```
 
-or download the css on github and include in your project:
+#### With Git
 
 ```
-git clone git@github.com:mrmrs/tachyons-hovers
+git clone https://github.com/tachyons-css/tachyons-hovers
 ```
 
-## The Code
+## Usage
+
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "tachyons-hovers";
 ```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/tachyons-hovers">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
 /*
 
   HOVER EFFECTS
 
 
 */
-
 /* 
   
   Dim element on hover by adding the dim class.
 
 */
-.dim { 
-  opacity: 1; 
-  -webkit-transition: opacity .15s ease-in; 
-          transition: opacity .15s ease-in; 
-}
-.dim:hover,
-.dim:focus { 
-  opacity: .5; 
-  -webkit-transition: opacity .15s ease-in; 
-          transition: opacity .15s ease-in; 
-}
-.dim:active {
-  opacity: .8; -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out; 
-}
-
+.dim { opacity: 1; transition: opacity .15s ease-in; }
+.dim:hover, .dim:focus { opacity: .5; transition: opacity .15s ease-in; }
+.dim:active { opacity: .8; transition: opacity .15s ease-out; }
 /*
 
   Hide child on hover:
@@ -57,48 +84,24 @@ git clone git@github.com:mrmrs/tachyons-hovers
     <div class="child"> Hidden until hover or focus </div>
   </div>
 */
-
-.hide-child .child {
-  opacity: 0;
-  -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
-}
-.hide-child:hover  .child,
-.hide-child:focus  .child,
-.hide-child:active .child {
-  opacity: 1;
-  -webkit-transition: opacity .15s ease-in;
-          transition: opacity .15s ease-in;
-}
-
-
+.hide-child .child { opacity: 0; transition: opacity .15s ease-in; }
+.hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; transition: opacity .15s ease-in; }
 ```
 
-## Author
+## Contributing
 
-[mrmrs](http://mrmrs.io)
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Authors
+
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
