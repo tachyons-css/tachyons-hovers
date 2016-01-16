@@ -2,15 +2,15 @@
   "name": "tachyons-hovers",
   "version": "2.0.1",
   "style": "tachyons-hovers.css",
-  "homepage": "http://github.com/mrmrs/tachyons-hovers",
+  "homepage": "http://github.com/tachyons-css/tachyons-hovers",
   "description": "Performance based css module.",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/tachyons-hovers.git"
+    "url": "http://github.com/tachyons-css/tachyons-hovers.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/tachyons-hovers/issues",
+    "url": "https://github.com/tachyons-css/tachyons-hovers/issues",
     "email": "hi@mrmrs.cc"
   },
   "author": {
