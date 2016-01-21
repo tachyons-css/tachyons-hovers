@@ -1,4 +1,4 @@
-# tachyons-hovers 1.1.0
+# tachyons-hovers 2.0.3
 
 Performance based css module.
 
