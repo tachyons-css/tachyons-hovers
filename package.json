@@ -20,7 +20,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^0.3.0"
+    "tachyons-cli": "^0.3.3"
   },
   "scripts": {
     "start": "tachyons src/tachyons-hovers.css > css/tachyons-hovers.css && tachyons src/tachyons-hovers.css --minify > css/tachyons-hovers.min.css && tachyons src/tachyons-hovers.css --generate-docs --package=../../package.json > readme.md"
