@@ -19,9 +19,16 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^0.5.0"
+    "tachyons-cli": "^0.5.0",
+    "tachyons-cli": "^0.3.3",
+    "watch": "^0.17.1"
   },
   "scripts": {
-    "start": "tachyons src/tachyons-hovers.css > css/tachyons-hovers.css && tachyons src/tachyons-hovers.css --minify > css/tachyons-hovers.min.css && tachyons src/tachyons-hovers.css --generate-docs --package=../../package.json > readme.md"
+    "start": "npm run build:watch",
+    "build:css": "tachyons src/tachyons-hovers.css > css/tachyons-hovers.css",
+    "build:minify": "tachyons src/tachyons-hovers.css --minify > css/tachyons-hovers.min.css",
+    "build:docs": "tachyons src/tachyons-hovers.css --generate-docs --package=../../package.json > readme.md",
+    "build": "npm run build:css && npm run build:minify && npm run build:docs",
+    "build:watch": "watch 'npm run build' ./src"
   }
 }
