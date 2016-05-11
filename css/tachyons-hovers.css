@@ -4,8 +4,8 @@
 
 
 */
-/* 
-  
+/*
+
   Dim element on hover by adding the dim class.
 
 */
@@ -28,4 +28,5 @@
 */
 .hide-child .child { opacity: 0; transition: opacity .15s ease-in; }
 .hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; transition: opacity .15s ease-in; }
+.underline-hover:hover, .underline-hover:focus { text-decoration: underline; }
 
