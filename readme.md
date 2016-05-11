@@ -1,10 +1,10 @@
-# tachyons-hovers 2.0.4
+# tachyons-hovers 2.0.5
 
 Performance based css module.
 
 #### Stats
 
-324 | 8 | 10
+350 | 10 | 11
 ---|---|---
 bytes | selectors | declarations
 
@@ -62,8 +62,8 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 
 
 */
-/* 
-  
+/*
+
   Dim element on hover by adding the dim class.
 
 */
@@ -86,6 +86,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 */
 .hide-child .child { opacity: 0; transition: opacity .15s ease-in; }
 .hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; transition: opacity .15s ease-in; }
+.underline-hover:hover, .underline-hover:focus { text-decoration: underline; }
 ```
 
 ## Contributing
