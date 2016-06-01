@@ -1,10 +1,10 @@
-# tachyons-hovers 2.0.5
+# tachyons-hovers 2.1.0
 
 Performance based css module.
 
 #### Stats
 
-350 | 10 | 11
+472 | 14 | 15
 ---|---|---
 bytes | selectors | declarations
 
@@ -87,6 +87,12 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 .hide-child .child { opacity: 0; transition: opacity .15s ease-in; }
 .hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; transition: opacity .15s ease-in; }
 .underline-hover:hover, .underline-hover:focus { text-decoration: underline; }
+/* Can combine this with overflow-hidden to make background images grow on hover
+ * even if you are using background-size: cover */
+.grow { transition: transform .2s; }
+.grow:hover { transform: scale( 1.05 ); }
+.grow-large { transition: transform .2s; }
+.grow-large:hover { transform: scale( 1.2 ); }
 ```
 
 ## Contributing
