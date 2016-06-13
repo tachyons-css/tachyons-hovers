@@ -1,10 +1,10 @@
-# tachyons-hovers 2.1.0
+# tachyons-hovers 2.2.0
 
 Performance based css module.
 
 #### Stats
 
-472 | 14 | 15
+498 | 15 | 16
 ---|---|---
 bytes | selectors | declarations
 
@@ -93,6 +93,8 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 .grow:hover { transform: scale( 1.05 ); }
 .grow-large { transition: transform .2s; }
 .grow-large:hover { transform: scale( 1.2 ); }
+/* Add pointer on hover */
+.pointer:hover { cursor: pointer; }
 ```
 
 ## Contributing
