@@ -1,10 +1,10 @@
-# tachyons-hovers 2.2.0
+# tachyons-hovers 2.3.0
 
 Performance based css module.
 
 #### Stats
 
-498 | 15 | 16
+506 | 15 | 16
 ---|---|---
 bytes | selectors | declarations
 
@@ -72,7 +72,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 .dim:active { opacity: .8; transition: opacity .15s ease-out; }
 /*
 
-  Hide child on hover:
+  Hide child & reveal on hover:
 
   Put the hide-child class on a parent element and any nested element with the
   child class will be hidden and displayed on hover or focus.
