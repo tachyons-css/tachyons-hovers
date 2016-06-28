@@ -1,6 +1,6 @@
 {
   "name": "tachyons-hovers",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "style": "src/tachyons-hovers.css",
   "description": "Performance based css module.",
   "keywords": [
@@ -30,7 +30,7 @@
     "build": "npm run build:css && npm run build:minify && npm run build:docs",
     "build:watch": "watch 'npm run build' ./src"
   },
-  "tachyonsModule": {
+  "metadata": {
     "category": "theming",
     "isCore": true
   }
