@@ -1,10 +1,10 @@
-# tachyons-hovers 2.3.2
+# tachyons-hovers 2.3.5
 
 Performance based css module.
 
 #### Stats
 
-506 | 15 | 16
+554 | 19 | 17
 ---|---|---
 bytes | selectors | declarations
 
@@ -36,7 +36,7 @@ Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
+$ tachyons-cli path/to/css-file.css > dist/t.css
 ```
 
 #### Using the CSS
@@ -90,11 +90,13 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
 .grow { transition: transform .2s; }
-.grow:hover { transform: scale( 1.05 ); }
+.grow:hover, .grow:focus { transform: scale( 1.05 ); }
 .grow-large { transition: transform .2s; }
-.grow-large:hover { transform: scale( 1.2 ); }
+.grow-large:hover, .grow-large:focus { transform: scale( 1.2 ); }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
+/* Add shadow on hover */
+.shadow-hover:hover, .shadow-hover:focus { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
 ```
 
 ## Contributing

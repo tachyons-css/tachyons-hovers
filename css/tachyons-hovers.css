@@ -32,9 +32,11 @@
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
 .grow { transition: transform .2s; }
-.grow:hover { transform: scale( 1.05 ); }
+.grow:hover, .grow:focus { transform: scale( 1.05 ); }
 .grow-large { transition: transform .2s; }
-.grow-large:hover { transform: scale( 1.2 ); }
+.grow-large:hover, .grow-large:focus { transform: scale( 1.2 ); }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
+/* Add shadow on hover */
+.shadow-hover:hover, .shadow-hover:focus { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
 
