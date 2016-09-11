@@ -55,7 +55,7 @@ $ tachyons path/to/css-file.css > dist/t.css
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://npmcdn.com/tachyons-hovers@2.4.0/css/tachyons-hovers.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-hovers@2.4.0/css/tachyons-hovers.min.css" />
 ```
 
 ##### Locally
