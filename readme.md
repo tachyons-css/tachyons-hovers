@@ -1,4 +1,4 @@
-# tachyons-hovers 2.4.1
+# tachyons-hovers 2.4.2
 
 Performance based css module.
 
@@ -55,7 +55,7 @@ $ tachyons path/to/css-file.css > dist/t.css
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://unpkg.com/tachyons-hovers@2.4.1/css/tachyons-hovers.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-hovers@2.4.2/css/tachyons-hovers.min.css" />
 ```
 
 ##### Locally
@@ -115,7 +115,7 @@ Running `$ npm start` will process the source css and place the built css in the
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
 .grow { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); -webkit-transition: -webkit-transform .25s ease-out; transition: -webkit-transform .25s ease-out; transition: transform .25s ease-out; transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
-.grow:hover, .grow:focus { -webkit-transform: scale( 15 ); transform: scale( 15 ); }
+.grow:hover, .grow:focus { -webkit-transform: scale( 1.05 ); transform: scale( 1.05 ); }
 .grow:active { -webkit-transform: scale( .90 ); transform: scale( .90 ); }
 .grow-large { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); -webkit-transition: -webkit-transform .25s ease-in-out; transition: -webkit-transform .25s ease-in-out; transition: transform .25s ease-in-out; transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out; }
 .grow-large:hover, .grow-large:focus { -webkit-transform: scale( 1.2 ); transform: scale( 1.2 ); }
