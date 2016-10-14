@@ -1,10 +1,10 @@
-# tachyons-hovers 2.4.2
+# tachyons-hovers 2.4.4
 
 Performance based css module.
 
 #### Stats
 
-840 | 22 | 48
+907 | 22 | 53
 ---|---|---
 bytes | selectors | declarations
 
@@ -55,7 +55,7 @@ $ tachyons path/to/css-file.css > dist/t.css
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://unpkg.com/tachyons-hovers@2.4.2/css/tachyons-hovers.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-hovers@2.4.4/css/tachyons-hovers.min.css" />
 ```
 
 ##### Locally
@@ -122,13 +122,14 @@ Running `$ npm start` will process the source css and place the built css in the
 .grow-large:active { -webkit-transform: scale( .95 ); transform: scale( .95 ); }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
-/* 
+/*
    Add shadow on hover.
+   Parent element should have a position declaration.
 
-   Performant box-shadow animation pattern from 
-   http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
+   Performant box-shadow animation pattern from
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
 */
-.shadow-hover::after { box-shadow: 0 0px 8px 2px rgba( 0, 0, 0, .2 ); opacity: 0; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
+.shadow-hover::after { content: ''; position: absolute; width: 100%; height: 100%; z-index: -1; box-shadow: 0 0 8px 2px rgba( 0, 0, 0, .2 ); opacity: 0; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
 .shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }
 ```
 
