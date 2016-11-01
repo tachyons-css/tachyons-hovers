@@ -1,6 +1,6 @@
 {
   "name": "tachyons-hovers",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "style": "src/tachyons-hovers.css",
   "description": "Performance based css module.",
   "keywords": [
