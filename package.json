@@ -1,6 +1,6 @@
 {
   "name": "tachyons-hovers",
-  "version": "2.4.4",
+  "version": "2.5.0",
   "style": "src/tachyons-hovers.css",
   "description": "Performance based css module.",
   "keywords": [
@@ -19,8 +19,8 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "tachyons-cli": "^1.0.8",
-    "watch": "^0.19.1"
+    "tachyons-cli": "^1.0.10",
+    "watch": "^1.0.1"
   },
   "scripts": {
     "start": "npm run build:watch",

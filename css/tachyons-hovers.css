@@ -55,4 +55,7 @@
 */
 .shadow-hover::after { content: ''; position: absolute; width: 100%; height: 100%; z-index: -1; box-shadow: 0 0 8px 2px rgba( 0, 0, 0, .2 ); opacity: 0; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
 .shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }
+/* Combine with classes in skins and skins-pseudo for
+ * thousands of different transition possibilities. */
+.bg-animate, .bg-animate:hover, .bg-animate:focus { -webkit-transition: background-color .15s ease-in-out; transition: background-color .15s ease-in-out; }
 
