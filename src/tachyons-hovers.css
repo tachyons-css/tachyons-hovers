@@ -22,7 +22,8 @@
   transition: opacity .15s ease-in;
 }
 .dim:hover,
-.dim:focus {
+.dim:focus,
+.dim:focus-within {
   opacity: .5;
   transition: opacity .15s ease-in;
 }
@@ -49,15 +50,17 @@
   opacity: 0;
   transition: opacity .15s ease-in;
 }
-.hide-child:hover  .child,
-.hide-child:focus  .child,
+.hide-child:hover .child,
+.hide-child:focus .child,
+.hide-child:focus-within .child,
 .hide-child:active .child {
   opacity: 1;
   transition: opacity .15s ease-in;
 }
 
 .underline-hover:hover,
-.underline-hover:focus {
+.underline-hover:focus,
+.underline-hover:focus-within {
   text-decoration: underline;
 }
 
@@ -72,7 +75,8 @@
 }
 
 .grow:hover,
-.grow:focus {
+.grow:focus,
+.grow:focus-within {
   transform: scale(1.05);
 }
 
@@ -88,7 +92,8 @@
 }
 
 .grow-large:hover,
-.grow-large:focus {
+.grow-large:focus,
+.grow-large:focus-within {
   transform: scale(1.2);
 }
 
@@ -116,7 +121,8 @@
 }
 
 .shadow-hover:hover::after,
-.shadow-hover:focus::after {
+.shadow-hover:focus::after,
+.shadow-hover:focus-within::after {
   opacity: 1;
 }
 
@@ -125,7 +131,8 @@
 
 .bg-animate,
 .bg-animate:hover,
-.bg-animate:focus {
+.bg-animate:focus,
+.bg-animate:focus-within {
   transition: background-color .15s ease-in-out; 
 }
 
